@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -19,7 +18,21 @@ public class main {
 	
 	ArrayOrganizer organize = new ArrayOrganizer();
 	ArrayList<Integer> list4 = organize.concatAndSort(list1, list2, list3);
-	
+	Player tom = new Player("Tom");
+	Player john = new Player("John");
+	Player james= new Player("James");
+	Player henry = new Player("Henry");
+	Die die = new Die();
+	for(int i=0; i<5; i++) {
+		tom.addScore(die.rollDie());
+		john.addScore(die.rollDie());
+		james.addScore(die.rollDie());
+		henry.addScore(die.rollDie());
+	}
+	tom.toString();
+	john.toString();
+	james.toString();
+	henry.toString();
 	}
 
 }
